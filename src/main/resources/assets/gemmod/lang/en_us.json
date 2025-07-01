@@ -1,4 +1,11 @@
 {
   "item.gemmod.mithril": "Mithril",
-  "item.gemmod.raw_mithril": "Raw Mithril"
+  "item.gemmod.raw_mithril": "Raw Mithril",
+
+  "block.gemmod.mithril_block": "Legendary Block of Mithril",
+  "block.gemmod.mithril_ore": "Mithril Ore",
+
+  "creativetab.gemmod.mithril_items": "Mithril Items",
+  "creativetab.gemmod.mithril_block": "Mithril Blocks"
+
 }

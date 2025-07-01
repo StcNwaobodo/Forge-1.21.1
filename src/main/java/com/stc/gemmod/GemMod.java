@@ -1,6 +1,8 @@
 package com.stc.gemmod;
 
 import com.mojang.logging.LogUtils;
+import com.stc.gemmod.block.ModBlocks;
+import com.stc.gemmod.item.ModCreativeModeTabs;
 import com.stc.gemmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -30,7 +32,11 @@ public class GemMod {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -47,6 +53,11 @@ public class GemMod {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.MITHRIL);
             event.accept(ModItems.RAW_MITHRIL);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.MITHRIL_BLOCK);
+            event.accept(ModBlocks.MITHRIL_ORE);
         }
     }
 
