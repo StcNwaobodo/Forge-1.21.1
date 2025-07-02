@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "gemmod:mithril_block",
+    "gemmod:mithril_ore",
+    "gemmod:mithril_block_ore",
+    "gemmod:mithril_deepslate_ore"
+  ]
+}

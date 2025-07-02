@@ -2,8 +2,12 @@
   "item.gemmod.mithril": "Mithril",
   "item.gemmod.raw_mithril": "Raw Mithril",
 
+  "item.gemmod.chisel": "Chisel",
+
   "block.gemmod.mithril_block": "Legendary Block of Mithril",
-  "block.gemmod.mithril_ore": "Mithril Ore",
+  "block.gemmod.mithril_ore": "Raw Mithril Block",
+  "block.gemmod.mithril_block_ore": "Mithril Ore",
+  "block.gemmod.mithril_deepslate_ore": "Mithril Deepslate Ore",
 
   "creativetab.gemmod.mithril_items": "Mithril Items",
   "creativetab.gemmod.mithril_block": "Mithril Blocks"

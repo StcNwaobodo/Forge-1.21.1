@@ -1,6 +1,7 @@
 package com.stc.gemmod.item;
 
 import com.stc.gemmod.GemMod;
+import com.stc.gemmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -20,6 +21,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.MITHRIL.get());
                         output.accept(ModItems.RAW_MITHRIL.get());
 
+                        output.accept(ModItems.CHISEL.get());
+
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> MITHRIL_BLOCKS_TAB = CREATIVE_MODE_TABS.register("mithril_blocks_tab",
@@ -29,6 +32,9 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.MITHRIL_BLOCK.get());
                         output.accept(ModBlocks.MITHRIL_ORE.get());
+
+                        output.accept(ModBlocks.MITHRIL_BLOCK_ORE.get());
+                        output.accept(ModBlocks.MITHRIL_DEEPSLATE_ORE.get());
 
                     }).build());
 
